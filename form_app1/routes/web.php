@@ -22,3 +22,7 @@ Route::get('/about', function(){
 });
 
 Route:: view("login", 'login');
+
+Route::get('/header', function(){
+    return view('header');
+});
