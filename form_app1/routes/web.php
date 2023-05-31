@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,9 @@ Route::get('/about', function(){
     return view('about');
 });
 
-Route:: view("login", 'login');
+Route::post ('users', [UsersController::class, 'getData']);
+
+Route::view("login", 'login');
 
 Route::get('/header', function(){
     return view('header');
