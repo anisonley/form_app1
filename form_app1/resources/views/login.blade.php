@@ -15,11 +15,6 @@
 				<form action="users" method='POST' >
 				@csrf
 					<h1>Create Account</h1>
-					<div class="social-container">
-						<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-						<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-					</div>
 					<span>or use your email for registration</span>
 					<input type="text" placeholder="Name" />
 					<input type="email" placeholder="Email" />
@@ -30,12 +25,7 @@
 			<div class="form-container sign-in-container">
 				<form action="users" method='POST'>
 				@csrf
-					<h1>Sign in</h1>
-					<div class="social-container">
-						<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-						<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-					</div>
+					<h1>Sign in</h1>>
 					<span>or use your account</span>
 					<input type="email" placeholder="Email" />
 					<input type="password" placeholder="Password" />
@@ -271,21 +261,6 @@ input {
 
 .container.right-panel-active .overlay-right {
 	transform: translateX(20%);
-}
-
-.social-container {
-	margin: 20px 0;
-}
-
-.social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
 }
 
 footer {
